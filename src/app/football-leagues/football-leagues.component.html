@@ -1,0 +1,24 @@
+<h2 class="card-title">Football Updates</h2>
+
+<div *ngIf="standings$ | async as standings">
+  <table>
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col">Name</th>
+      <th scope="col">Games</th>
+      <th scope="col">Points</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let standing of standings;index as i" class="table">
+      <th scope="row">{{i + 1}}</th>
+      <td><img alt="Team Emblem" src="{{standing.team.logo}}" style="width:24px;height:24px;"></td>
+      <td (click)="goToTeamFixtures(standing.team.id)">{{standing.team.name}}</td>
+      <td>{{standing.all.played}}</td>
+      <td>{{standing.points}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
