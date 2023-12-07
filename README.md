@@ -70,7 +70,7 @@ Create account to get api key , using Season/year from now
       Spain/La Liga = 140
       Germany/Bundesliga = 78
       France/Ligue 1 = 61
-      Italy/Serie A = 71
+      Italy/Serie A = 135
 
 2/ League Table
 
