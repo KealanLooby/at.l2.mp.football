@@ -14,17 +14,21 @@ export class FixturesComponent implements OnInit {
 
   teamId!: string;
   leagueId!: string;
+  season!: string;
   fixtures$!: Observable<Response[]>;
 
-  constructor(private apiSportsService: ApiSportsService, private route: ActivatedRoute, private location: Location) {
+  constructor(
+    private apiSportsService: ApiSportsService,
+    private route: ActivatedRoute,
+    private location: Location) {
   }
 
   ngOnInit(): void {
     this.leagueId = this.route.snapshot.paramMap.get('leagueId') || '';
     this.teamId = this.route.snapshot.paramMap.get('teamId') || '';
+    this.season = this.route.snapshot.paramMap.get('season') || '';
 
-    // call service , to get fixtures with id, back into obs , and show in table , add back button
-    this.fixtures$ = this.apiSportsService.getFixtures(this.leagueId, this.teamId)
+    this.fixtures$ = this.apiSportsService.getFixtures(this.leagueId, this.teamId, this.season)
       .pipe(
         map(resp => resp.response)
       );

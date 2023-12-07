@@ -1,0 +1,26 @@
+
+.rounded-row {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background-color: #f8f9fa;
+}
+
+.rounded-row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 10px;
+  transition: text-decoration 0.3s, color 0.3s;
+}
+
+.rounded-row .col:hover {
+  text-decoration: underline; /* Underline on hover */
+  cursor: pointer;
+}
+
+.table .data:hover {
+  text-decoration: underline; /* Underline on hover */
+  cursor: pointer;
+}
+

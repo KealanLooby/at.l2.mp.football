@@ -86,6 +86,12 @@ Create account to get api key , using Season/year from now
         x-rapidapi-host:v3.football.api-sports.io
         x-rapidapi-key: 
 
+4/ Seasons : From Docs
+
+      All seasons are only 4-digit keys, so for a league whose season 
+      is 2018-2019 like the English Premier League (EPL), 
+      the 2018-2019 season in the API will be 2018.
+
 ## Prep
 
 Add Bootstrap
@@ -107,3 +113,7 @@ Add Flexbox Layout
 2/ Add models using, postman response and https://app.quicktype.io/
 
 3/ Basic mechanics working, Use the postman responses for the moment
+
+4/ Add select/nav bar for countries and style a bit
+
+5/ Fixed up tables, added spinner and mechanism to get season. 
