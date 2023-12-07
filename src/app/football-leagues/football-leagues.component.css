@@ -15,12 +15,12 @@
 }
 
 .rounded-row .col:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .table .data:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
   cursor: pointer;
 }
 

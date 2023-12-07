@@ -26,13 +26,13 @@
             </thead>
             <tbody>
             <tr *ngFor="let fixture of fixtures;index as i" class="table">
-              <td><img alt="Team Emblem" class="logo-size" src="{{fixture.teams?.home?.logo}}"></td>
-              <td>{{fixture.teams?.home?.name}}</td>
-              <td>{{fixture.goals?.home}}</td>
+              <td><img alt="Team Emblem" class="logo-size" src="{{fixture.teams.home?.logo}}"></td>
+              <td>{{fixture.teams.home?.name}}</td>
+              <td>{{fixture.goals.home}}</td>
               <td> -</td>
-              <td>{{fixture.goals?.away}}</td>
-              <td>{{fixture.teams?.away?.name}}</td>
-              <td><img alt="Team Emblem" class="logo-size" src="{{fixture.teams?.away?.logo}}"></td>
+              <td>{{fixture.goals.away}}</td>
+              <td>{{fixture.teams.away?.name}}</td>
+              <td><img alt="Team Emblem" class="logo-size" src="{{fixture.teams.away?.logo}}"></td>
             </tr>
             </tbody>
           </table>

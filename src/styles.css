@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 .table td, th {
-  text-align: center; /* Horizontally center the content */
-  vertical-align: middle; /* Vertically center the content */
+  text-align: center;
+  vertical-align: middle;
 }
 
 .logo-size {

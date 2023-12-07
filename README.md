@@ -116,4 +116,6 @@ Add Flexbox Layout
 
 4/ Add select/nav bar for countries and style a bit
 
-5/ Fixed up tables, added spinner and mechanism to get season. 
+5/ Fixed up tables, added spinner and mechanism to get season.
+
+6/ Final review/tidy
